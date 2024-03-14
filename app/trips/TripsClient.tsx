@@ -10,6 +10,7 @@ import { SafeReservation, SafeUser } from "@/app/types";
 import Heading from "@/app/components/Heading";
 import Container from "@/app/components/Container";
 import ListingCard from "@/app/components/listings/ListingCard";
+import Button from "../components/Button";
 
 interface TripsClientProps {
   reservations: SafeReservation[],
@@ -57,7 +58,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
           2xl:grid-cols-6
           gap-8
         "
-      >
+      > 
         {reservations.map((reservation: any) => (
           <ListingCard
             key={reservation.id}
